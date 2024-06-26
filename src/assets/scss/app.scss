@@ -1,0 +1,392 @@
+/*
+Template Name: Minia - Admin & Dashboard Template
+Author: Themesbrand
+Version: 1.2.0.
+Website: https://themesbrand.com/
+Contact: themesbrand@gmail.com
+File: Main Css File
+*/
+
+//Fonts
+@import "custom/fonts/fonts";
+
+//Core files
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "variables";
+@import "./node_modules/bootstrap/scss/mixins.scss";
+
+// Structure
+@import "custom/structure/general";
+@import "custom/structure/topbar";
+@import "custom/structure/page-head";
+@import "custom/structure/footer";
+@import "custom/structure/right-sidebar";
+@import "custom/structure/vertical";
+@import "custom/structure/horizontal-nav";
+@import "custom/structure/layouts";
+
+// Components
+@import "custom/components/waves";
+@import "custom/components/accordion";
+@import "custom/components/avatar";
+@import "custom/components/helper";
+@import "custom/components/modals";
+@import "custom/components/forms";
+@import "custom/components/widgets";
+@import "custom/components/toasts";
+@import "custom/components/demos";
+@import "custom/components/print";
+
+// Plugins
+@import "custom/plugins/custom-scrollbar";
+@import "custom/plugins/calendar";
+@import "custom/plugins/session-timeout";
+@import "custom/plugins/range-slider";
+@import "custom/plugins/sweatalert2";
+@import "custom/plugins/alertify";
+@import "custom/plugins/pristinejs";
+@import "custom/plugins/choices";
+@import "custom/plugins/switch";
+@import "custom/plugins/colorpicker";
+@import "custom/plugins/datepicker";
+@import "custom/plugins/form-editors";
+@import "custom/plugins/form-upload";
+@import "custom/plugins/form-wizard";
+@import "custom/plugins/datatable";
+@import "custom/plugins/responsive-table";
+@import "custom/plugins/table-editable";
+@import "custom/plugins/apexcharts";
+@import "custom/plugins/echarts";
+@import "custom/plugins/sparkline-chart";
+@import "custom/plugins/google-map";
+@import "custom/plugins/vector-maps";
+@import "custom/plugins/leaflet-maps";
+
+// Pages
+@import "custom/pages/authentication";
+@import "custom/pages/email";
+@import "custom/pages/chat";
+@import "custom/pages/coming-soon";
+@import "custom/pages/timeline";
+@import "custom/pages/extras-pages";
+
+// resgister page css
+
+.register-header {
+  position: absolute;
+  z-index: 2;
+  width: 98%;
+  height: 60px;
+  background-color: transparent;
+
+  .register-logo {
+  }
+  .register-login-btn {
+    align-items: center;
+    display: flex;
+    justify-content: end;
+    padding: 0;
+    // background: #5156be;
+    height: 100%;
+    padding: 0 !important;
+    flex-basis: 49.2%;
+  }
+  .register-login-btn a {
+    padding: 7px 60px;
+    font-size: 16px;
+    border-radius: 4px;
+    box-shadow: white 0px 7px 29px 0px;
+    background-color: white;
+    // border: 1px solid white;
+    color: rgb(28, 97, 189);
+    box-shadow: 0 8px 6px -6px #5156be;
+    font-weight: 500;
+  }
+  .register-login-btn a:hover {
+    background-color: #5156be !important;
+    color: white !important;
+    border: 2px solid white;
+    transition: 0.3s all;
+  }
+}
+.auth-page {
+  // .col-lg-8 {
+  //   width: 50%;
+  // }
+  // .col-lg-4 {
+  //   width: 50%;
+  // }
+}
+
+.main_register_card{
+  transition: all 0.6s;
+  animation: flip 1s ;
+  // transform-style: preserve-3d;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateY(180deg); 
+  }
+  
+}
+.auth-full-page-content {
+  min-height: 80vh !important;
+}
+.register-about {
+  background-color: #000000;
+    display: flex;
+    flex-direction: column;
+     justify-content: center; 
+    /* padding: 0; */
+    border-radius: 7px 0 0 7px;
+    // height: 100%;
+    min-height: 80vh;
+    padding: 0 50px;
+
+  .heading {
+    text-align: left;
+    font-size: 1.87rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 11px;
+  }
+  .content {
+    padding-top: 35px;
+    display: flex;
+    .icon {
+      padding-right: 15px;
+    }
+
+    .text {
+      h1 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: white;
+        margin-bottom: 1rem;
+      }
+      p {
+        font-size: 14px;
+        font-weight: 400;
+        color: white;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
+.register-about-form{
+  border-radius: 0 7px 7px 0;
+}
+.auth-content {
+  .name {
+    display: flex;
+    justify-content: space-between;
+    .firstName {
+      flex-basis: 45%;
+    }
+    .lastName {
+      flex-basis: 45%;
+    }
+  }
+  .contact {
+    display: flex;
+    justify-content: space-between;
+    .contactEmail {
+      flex-basis: 45%;
+    }
+    .contactPhone {
+      flex-basis: 45%;
+    }
+  }
+}
+.validate-span {
+  color: red !important;
+  font-size: 12px;
+}
+#check {
+  margin-right: 10px;
+}
+// resgister page css
+
+// login page scss
+.login-header {
+  position: fixed;
+  z-index: 2;
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 8px 6px -6px rgb(214, 214, 214);
+  width: 100%;
+  height: 60px;
+  background-color: transparent;
+  .register-logo {
+    flex-basis: 50.8%;
+    height: 100%;
+    display: flex;
+    background: white;
+    padding: 0 !important;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 30px !important;
+  }
+  .register-login-btn {
+    align-items: center;
+    display: flex;
+    justify-content: end;
+    padding: 0;
+    background: #ffffff;
+    height: 100%;
+    padding: 0 !important;
+    flex-basis: 49.2%;
+  }
+  .register-login-btn a {
+    // position: absolute;
+    padding: 9px 19px;
+    top: -41px;
+    // background-color: white;
+    right: 20px;
+    border-radius: 4px;
+    box-shadow: 0 8px 6px -6px rgb(35, 21, 117);
+    background-color: #5156be;
+    // border: 1px solid white;
+    margin-right: 20px;
+    color: white;
+  }
+}
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// login page scss
+
+// user Profile css
+
+.userProfile {
+  margin-top: 85px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 85px;
+
+  .content {
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+  }
+  .custom-form {
+    padding: 20px;
+    padding-left: 30px !important;
+  }
+  .userData {
+    // flex-basis: 50%;
+    padding-left: 0;
+  }
+  .auth-full-page-content {
+    padding: 0 !important;
+    // padding-right: 30px !important;
+    border: 1px solid #e9e9ef;
+    height: auto !important;
+    border-radius: 3px;
+    min-height: 100% !important;
+  }
+  .auth-content {
+    .text-center {
+      text-align: left !important;
+      border-bottom: 1px solid #e9e9ef;
+      padding-left: 30px;
+      h5 {
+        font-size: 15.7px !important;
+        // padding-left: 23px !important;
+      }
+    }
+  }
+  .changePass {
+    border: none;
+    // border: 1px solid #e9e9ef;
+    padding: 0 !important;
+  }
+}
+// user Profile css
+
+//  whoIS REcords CCSSSSS
+.userProfile {
+  .whoIsRecordTable {
+    // padding: 1.5rem 2rem !important;
+    // height: 100px !important;
+    // margin: 30px 0;
+  }
+} 
+ .widgets::-webkit-scrollbar {
+    width: 1px;
+}
+
+.widgets::-webkit-scrollbar-track {
+    // -webkit-box-shadow:  0 0 6px rgba(0,0,0,0.3); 
+    // border-radius: 2px;
+}
+
+.widgets::-webkit-scrollbar-thumb {
+    // border-radius: 2px;
+    // -webkit-box-shadow:  0 0 6px rgba(0,0,0,0.5); 
+}
+
+.homeDivRegister{
+  background-color: #5156be;
+  padding: 1% 18%;
+  min-height: 100vh;
+}
+
+// .auth-full-page-content {
+//   min-height: 100%;
+// }
+@media screen and (max-width: 1030px) {
+  .register-about {
+    .heading {
+      margin-top: 7.5rem;
+    }
+  }
+  .main_register_card{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .register-about-form{
+    width: 100%;
+    border-radius: 7px 7px 0 0 ;
+  }
+  .register-about{
+    width: 100%;
+    border-radius: 0 0 7px 7px ;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .register-header {
+    .register-login-btn a {
+      padding: 7px 40px;
+      background-color: #5156be;
+      color: rgb(255, 255, 255);
+    }
+  }
+  .register-about{
+    padding: 0 1rem;
+    display: none;
+  }
+  .register-about-form {
+    border-radius: 7px 7px ;
+  }
+  .register-about-form .auth-full-page-content{
+    padding: 1.5rem !important;
+  }
+  .register-about-form{
+    // padding: 20px 42px !important;
+  }
+  .homeDivRegister{
+    padding: 25px 10px !important;
+  }
+}
